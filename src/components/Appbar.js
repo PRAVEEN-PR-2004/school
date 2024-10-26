@@ -79,7 +79,7 @@ function Appbar() {
                   >
                     ABOUT US
                   </Link>
-                  <Link
+                  {/*} <Link
                     to="/grouptour"
                     className="nav-link"
                     onClick={closeOffcanvas}
@@ -99,13 +99,13 @@ function Appbar() {
                     onClick={closeOffcanvas}
                   >
                     HONEYMOON
-                  </Link>
+                  </Link>*/}
                   <Link
                     to="/cruises"
                     className="nav-link"
                     onClick={closeOffcanvas}
                   >
-                    CRUISES
+                    FACILITIES
                   </Link>
                   <Link
                     to="/wedding"
@@ -113,6 +113,13 @@ function Appbar() {
                     onClick={closeOffcanvas}
                   >
                     WEDDING
+                  </Link>
+                  <Link
+                    to="/contactus"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
+                    CONTACT US
                   </Link>
                   <NavDropdown
                     title="SPORT"

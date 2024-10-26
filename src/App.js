@@ -15,6 +15,7 @@ import Topbar from "./components/Topbar";
 import FullPackages from "./components/FullPackages";
 import ShowGtours from "./components/ShowGtours";
 import ContactForGroup from "./pages/ContactForGroup.js";
+import Email from "./pages/Email.js";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Route path="/contact/:city" element={<Contact />}></Route>
         <Route path="/fullpackage/:id" element={<FullPackages />}></Route>
         <Route path="/showgrouptour/:id" element={<ShowGtours />}></Route>
+        <Route path="/contactus" element={<Email />}></Route>
+
         <Route
           path="/ContactForGroup/:group"
           element={<ContactForGroup />}
