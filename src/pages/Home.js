@@ -25,13 +25,11 @@ const Home = () => {
       <Content />
       <Spot />
       <TextCard />
-      <ImgBanner />
+
       <Slider1 />
-      <Familytour />
-      <Slider2 />
-      <Slider3 />
+
       <GoalCounter />
-      <Address />
+
       <Location />
       <Footer />
     </>

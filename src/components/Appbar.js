@@ -101,19 +101,19 @@ function Appbar() {
                     HONEYMOON
                   </Link>*/}
                   <Link
-                    to="/cruises"
+                    to="/facilities"
                     className="nav-link"
                     onClick={closeOffcanvas}
                   >
                     FACILITIES
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/wedding"
                     className="nav-link"
                     onClick={closeOffcanvas}
                   >
                     WEDDING
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/contactus"
                     className="nav-link"

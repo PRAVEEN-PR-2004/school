@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Cruises from "./pages/Cruises";
+import Facilities from "./pages/Facilities.js";
 import HoneyMoon from "./pages/HoneyMoon";
 import GroupTour from "./pages/GroupTour";
 import Packages from "./pages/Packages";
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/aboutus" element={<Aboutus />}></Route>
-        <Route path="/cruises" element={<Cruises />}></Route>
+        <Route path="/facilities" element={<Facilities />}></Route>
         <Route path="/grouptour" element={<GroupTour />}></Route>
         <Route path="/packages" element={<Packages />}></Route>
         <Route path="/wedding" element={<Wedding />}></Route>

@@ -8,11 +8,9 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 const Footer = () => {
   return (
     <>
-   
       <div
         style={{
           backgroundColor: "#EEEEEE",
@@ -26,7 +24,12 @@ const Footer = () => {
           <Row style={{}} className="text-center">
             <Col md={6} className="text-center">
               <p style={{ fontSize: "30px" }}>
-                <FaMailBulk style={{ marginRight: "2%",fontFamily:"Playfair Display, serif" }} />
+                <FaMailBulk
+                  style={{
+                    marginRight: "2%",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                />
                 Get Updates & More
               </p>
             </Col>
@@ -57,49 +60,62 @@ const Footer = () => {
       </div>
       <div
         className="text-center"
-        style={{ width: "100%", padding: "50px 0", color: "white",backgroundColor:"#1C1C1C" }}
+        style={{
+          width: "100%",
+          padding: "50px 0",
+          color: "white",
+          backgroundColor: "#1C1C1C",
+        }}
       >
         <Container>
           <Row>
             <Col md={4} className="mb-5">
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD",fontFamily:"Playfair Display, serif" }}>Corporate Office</h3>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
+                  Our Address
+                </h3>
                 <hr style={{ borderTop: "2px solid #BDBDBD", width: "100%" }} />
               </div>
               <p
                 style={{ fontSize: "12px", color: "#BDBDBD" }}
                 className="mb-0"
               >
-                GT Holidays Pvt LTD,
+                GJRR+H69,
               </p>
               <p
                 style={{ fontSize: "12px", color: "#BDBDBD" }}
                 className="mb-0"
               >
-                Novel Tech Park,
+                SH 23,
               </p>
               <p
                 style={{ fontSize: "12px", color: "#BDBDBD" }}
                 className="mb-0"
               >
-                Opposite to 1 MG Mall,
+                Thruthuraipoondi,
               </p>
               <p
                 style={{ fontSize: "12px", color: "#BDBDBD" }}
                 className="mb-0"
               >
-                MG Road, Bangalore – 560042
-              </p>
-              <p
-                style={{ fontSize: "12px", color: "#BDBDBD" }}
-                className="mb-0"
-              >
-                Karnataka, India.
+                Tamil Nadu 614713
               </p>
             </Col>
             <Col md={4} className="mb-5">
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD",fontFamily:"Playfair Display, serif" }}>Head Office</h3>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
+                  Head Office
+                </h3>
                 <hr
                   style={{ borderTop: "2px solid lightgray", width: "100%" }}
                 />
@@ -138,7 +154,14 @@ const Footer = () => {
             </Col>
             <Col md={4} className="mb-5">
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD",fontFamily:"Playfair Display, serif" }}>Our branches</h3>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
+                  Helpful Links
+                </h3>
                 <hr
                   style={{ borderTop: "2px solid lightgray", width: "100%" }}
                 />
@@ -148,73 +171,44 @@ const Footer = () => {
                   style={{ fontSize: "12px", color: "#BDBDBD" }}
                   className="mb-0"
                 >
-                  <Link to='/contact/Mumbai' style={{textDecoration:"none",color:"inherit"}}>
-                  
-                 Mumbai
-                 </Link>
-                </li>
-                <li
-                  style={{ fontSize: "12px", color: "#BDBDBD" }}
-                  className="mb-0"
-                >
-                  <Link to='/contact/Hyderabad' style={{textDecoration:"none",color:"inherit"}}>
-                  Hyderabad
+                  <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Home
                   </Link>
                 </li>
                 <li
                   style={{ fontSize: "12px", color: "#BDBDBD" }}
                   className="mb-0"
                 >
-                  <Link to='/contact/Bangalore' style={{textDecoration:"none",color:"inherit"}}>
-                  Bangalore
+                  <Link
+                    to="/aboutus"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    About us
                   </Link>
                 </li>
                 <li
                   style={{ fontSize: "12px", color: "#BDBDBD" }}
                   className="mb-0"
                 >
-                  <Link to='/contact/Chennai' style={{textDecoration:"none",color:"inherit"}}>
-                  Chennai
+                  <Link
+                    to="/facilities"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Facilities
                   </Link>
                 </li>
                 <li
                   style={{ fontSize: "12px", color: "#BDBDBD" }}
                   className="mb-0"
                 >
-                  <Link to='/contact/Coimbatore' style={{textDecoration:"none",color:"inherit"}}>
-                  Coimbatore
-                  </Link>
-                </li>
-                <li
-                  style={{ fontSize: "12px", color: "#BDBDBD" }}
-                  className="mb-0"
-                >
-                  <Link to='/contact/Erode' style={{textDecoration:"none",color:"inherit"}}>
-                  Erode
-                  </Link>
-                </li>
-                <li
-                  style={{ fontSize: "12px", color: "#BDBDBD" }}
-                  className="mb-0"
-                >
-                  <Link to='/contact/Madurai' style={{textDecoration:"none",color:"inherit"}}>
-                  Madurai
-                  </Link>
-                </li>
-                <li
-                  style={{ fontSize: "12px", color: "#BDBDBD" }}
-                  className="mb-0"
-                >
-                  <Link to='/contact/Trichy' style={{textDecoration:"none",color:"inherit"}}>
-                  Trichy
-                  </Link>
-                </li>
-                <li
-                  style={{ fontSize: "12px", color: "#BDBDBD" }}
-                  className="mb-0"
-                >
-                  <Link to='/contact/Salem' style={{textDecoration:"none",color:"inherit"}}>
-                  Salem
+                  <Link
+                    to="/contactus"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Contact Us
                   </Link>
                 </li>
               </ul>
@@ -273,18 +267,21 @@ const Footer = () => {
           </Row>
         </Container>
       </div>
-      
-        <Container  className="text-center">
-          <Row style={{marginTop:"2%",marginBottom:"1%"}}>
-            <Col sm={6} >
-              <p style={{fontSize:"13px",fontWeight:"500"}}>Copyright © 2024 by GT Holidays Pvt Ltd. All Rights Reserved.</p>
-            </Col>
-            <Col sm={6}>
-              <p style={{fontSize:"13px",fontWeight:"500"}}>Privacy Policy | Terms & Conditions | Cancellation & Refund Policy</p>
-            </Col>
-          </Row>
-        </Container>
-     
+
+      <Container className="text-center">
+        <Row style={{ marginTop: "2%", marginBottom: "1%" }}>
+          <Col sm={6}>
+            <p style={{ fontSize: "13px", fontWeight: "500" }}>
+              Copyright © 2024 by GT Holidays Pvt Ltd. All Rights Reserved.
+            </p>
+          </Col>
+          <Col sm={6}>
+            <p style={{ fontSize: "13px", fontWeight: "500" }}>
+              Privacy Policy | Terms & Conditions | Cancellation & Refund Policy
+            </p>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

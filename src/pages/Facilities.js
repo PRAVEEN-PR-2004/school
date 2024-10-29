@@ -8,7 +8,7 @@ import Linkcom from "../components/Linkcom";
 import { Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
 
-const Cruises = () => {
+const Facilities = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -155,4 +155,4 @@ const Cruises = () => {
   );
 };
 
-export default Cruises;
+export default Facilities;
