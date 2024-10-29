@@ -11,21 +11,25 @@
   border-radius: 8px;
   overflow: hidden;
 }
-
 .location-info-card {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: linear-gradient(
+    135deg,
+    #333,
+    #444
+  ); /* Dark gradient background */
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   height: 100%; /* Ensure the card takes the full height */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #f8f9fa; /* Light text color */
 }
 
 .location-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #333;
+  color: #ffffff; /* White title color */
 }
 
 .location-icon {
@@ -35,7 +39,7 @@
 .location-text {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #555;
+  color: #dddddd; /* Light gray text */
   line-height: 1.6;
 }
 
