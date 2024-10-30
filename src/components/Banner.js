@@ -7,14 +7,14 @@ const Banner = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Change the breakpoint as per your requirement
+      setIsSmallScreen(window.innerWidth < 768);
     };
 
-    handleResize(); // Call initially to set the initial value
-    window.addEventListener("resize", handleResize); // Add event listener for resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -28,24 +28,23 @@ const Banner = () => {
           {isSmallScreen ? (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school8.jpg")}
+              src={require("../assets/schoolbanner1.jpg")}
               alt=""
             />
           ) : (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school8.jpg")}
+              src={require("../assets/schoolbanner1.jpg")}
               alt=""
             />
           )}
           <Carousel.Caption>
             <h3 style={{ fontWeight: "700", color: "yellow" }}>
-              extraordinary
+              Extraordinary
             </h3>
-            <p className="d-none d-sm-block">
-              The real voyage of discovery consists not in seeking new
-              landscapes, but in having new eyes. Discover it with GT Holidays,
-              the No.1 brand in south India.
+            <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
+              Discover a world of knowledge, growth, and opportunities at our
+              school, where every student's journey is extraordinary.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -53,24 +52,23 @@ const Banner = () => {
           {isSmallScreen ? (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school9.jpg")}
+              src={require("../assets/schoolbanner3.jpg")}
               alt=""
             />
           ) : (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school9.jpg")}
+              src={require("../assets/schoolbanner3.jpg")}
               alt=""
             />
           )}
           <Carousel.Caption>
             <h3 style={{ fontWeight: "700", color: "yellow" }}>
-              extraordinary
+              Learning Reimagined
             </h3>
-            <p className="d-none d-sm-block">
-              The real voyage of discovery consists not in seeking new
-              landscapes, but in having new eyes. Discover it with GT Holidays,
-              the No.1 brand in south India.
+            <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
+              Join us on a path of innovative education that inspires curious
+              minds and develops future leaders.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -78,24 +76,23 @@ const Banner = () => {
           {isSmallScreen ? (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school5.jpg")}
+              src={require("../assets/schoolbanner2.jpg")}
               alt=""
             />
           ) : (
             <img
               className="d-block w-100 carousel-image"
-              src={require("../assets/school5.jpg")}
+              src={require("../assets/schoolbanner2.jpg")}
               alt=""
             />
           )}
           <Carousel.Caption>
             <h3 style={{ fontWeight: "700", color: "yellow" }}>
-              extraordinary
+              Inspire and Achieve
             </h3>
-            <p className="d-none d-sm-block">
-              The real voyage of discovery consists not in seeking new
-              landscapes, but in having new eyes. Discover it with GT Holidays,
-              the No.1 brand in south India.
+            <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
+              Our commitment is to inspire each student to achieve their
+              personal best in a supportive and engaging environment.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

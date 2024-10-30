@@ -46,7 +46,7 @@ const Location = () => {
         </Col>
         {/* Column for Google Map */}
         <Col lg={8} md={12} className="map-column mb-lg-0 order-md-1">
-          <div className="map-container">
+          <div className="map-container" style={{ height: "80vh" }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.1000939410524!2d79.63802863828838!3d10.541404661420987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a555be2d1821f2f%3A0xea670ab8ef4c7667!2sSt.%20Antonys%20Matriculation%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1729681469448!5m2!1sen!2sin"
               width="100%"

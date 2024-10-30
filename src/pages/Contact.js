@@ -5,7 +5,6 @@ import Linkcom from "../components/Linkcom";
 import { Container } from "react-bootstrap";
 
 import Footer from "../components/Footer";
-import Address from "../components/Address";
 
 const Contact = () => {
   const { city } = useParams();
@@ -21,8 +20,6 @@ const Contact = () => {
 
   return (
     <>
-      <Linkcom>{contactcity.scity}</Linkcom>
-
       {/* Image and Title Section */}
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <img
@@ -53,15 +50,14 @@ const Contact = () => {
           {contactcity.scity} {/* Displays the title from CITY.js */}
         </div>
       </div>
-
-      <Container style={{ marginTop: "3%" }}>
+      <Linkcom>{contactcity.scity}</Linkcom>
+      <Container style={{ marginTop: "3%" }} className="mb-5">
         <p style={{ fontSize: "30px" }}>{contactcity.head1}</p>
         <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para1}</p>
         <p style={{ fontSize: "30px" }}>{contactcity.head2}</p>
         <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para2}</p>
       </Container>
 
-      <Address />
       <Footer />
     </>
   );

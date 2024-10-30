@@ -10,62 +10,54 @@ export const CITY = [
     scity: "Football",
     bimg: b1,
 
-    head1: "Why Choose GT Holidays As Your Travel Agent in Mumbai?",
-    para1: `Reputed for our competent customer service, the glowing testimonials we have received from our clients are one of the numerous reasons you should choose GT Holidays as your travel agent in Mumbai. We offer travel packages to hundreds of destinations in India and across the globe. <br>We have gained a reputation as a well-known destination management company with personalizing itineraries that match the client’s needs and budget. Our team members and experienced travel agents constantly strive to curate the most impeccable travel experience for everyone who reaches out to us.
+    head1: "Why Choose Football as a Sport?",
+    para1: `Football, known as the beautiful game, is one of the most popular sports worldwide. It promotes teamwork, strategic thinking, and physical endurance. Engaging in football helps improve cardiovascular health, enhances muscle strength, and boosts overall fitness. Moreover, it builds a sense of camaraderie and teamwork, as players must work together to achieve a common goal.`,
 
-Our Mumbai tour operators assist you with all travel arrangements throughout the vacation. From ticket reservations to visa processing and arranging guided tours to managing entry tickets and food arrangements, we pay attention to every little detail so that you don’t face any problems during the trip.
-
-Although these elements might seem unnecessary, they require experience and professional expertise. As a premium travel agency in Mumbai, GT Holidays offer you a memorable and holistic travel experience.`,
-    head2: "What to Look for in a Travel Agency in Mumbai?",
-    para2: `When looking for a travel agency in Mumbai, there are several features you must look for to ensure you make the most of your trip. As one of the best tour operators in Mumbai, we provide a wide range of features at the best price.
-
-        While planning a trip on your own may seem easy, it is always as easy as it looks. Our travel agents help you save time and money. We save you the headache of looking for the best strategically located hotels and get your visas and tickets done as well.`,
+    head2: "Meet Our Football Coach",
+    para2: `Our football coach has years of experience in guiding players from beginner to advanced levels. With expertise in strategy, training drills, and motivation, the coach focuses on developing both individual and team skills. Regular training sessions are structured to help players build their technical skills, physical strength, and tactical knowledge of the game.`,
   },
   {
     id: 2,
     scity: "Basketball",
     bimg: b2,
 
-    head1: "Why Choose GT Holidays as Your Travel Agent in Hyderabad?",
-    para1: `GT Holidays is South India’s leading travel company known for its impeccable service and customer satisfaction. Backed by years of customer service proficiency in the hospitality industry and branches across South India, we are among the best destination management companies. At GT Holidays, every itinerary is open to get tailored to fit your needs. You’ll be guided by the best travel agents in Hyderabad to ensure a superior holiday experience.`,
-    head2: "What to Look for in a Travel Agency in Hyderabad?",
-    para2: `A travel agency becomes prestigious only after its customers give positive feedback about their experience. Whether planning for a short trip or a long, restful vacation with a travel agency, you should always feel in control. GT Holidays has consistently exceeded customer expectations and offered quality service. We strongly advocate our motto ‘Customer Delight’ and are one of the best tour operators in Hyderabad, who can easily handle any travel situation. Our tour packages are available across all price categories, making them pocket-friendly.`,
+    head1: "Why Play Basketball?",
+    para1: `Basketball is a fast-paced, high-energy sport that requires agility, speed, and teamwork. It's a fantastic workout that improves coordination, balance, and physical conditioning. Playing basketball promotes mental focus, quick decision-making, and discipline, essential traits for both sports and life.`,
+
+    head2: "Our Basketball Program and Coach",
+    para2: `Our basketball program is led by a dedicated coach with a strong background in competitive play and training. The program focuses on individual skill development, team strategies, and in-game tactics. Players will learn essential skills like dribbling, shooting, and passing, along with strategies to excel in real-game scenarios.`,
   },
   {
     id: 3,
     scity: "Volleyball",
     bimg: b3,
 
-    head1: "Why Choose GT Holidays as Your Travel Agent in Bangalore?",
-    para1: `GT Holidays is South India’s leading travel agent with branches across South India. There are several reasons why we’re the best travel agency in Bangalore. For one, we’re backed by our experience and expertise in the hospitality industry and live by the motto, ‘Customer Delight.’ At GT Holidays, we create customized tours and holiday packages using customer profiling.`,
-    head2: "Which Company Is Best for Travel Agency in Bangalore?",
-    para2: `GT Holidays always exceeds expectations and strongly advocates their ‘Customer Delight’ motto. Quality service and tour packages across various price categories are our forte – we are equipped to serve all customers alike. Furthermore, our staff at GT Holidays are trained to offer transparent, practical, and feasible suggestions to clients while designing a tour package. Listening to your needs helps us take customers into confidence in the initial stages of planning itself. From visa processing to ticketing to boarding and sightseeing, we’ll take care of everything.`,
-  },
+    head1: "Benefits of Playing Volleyball",
+    para1: `Volleyball is a sport that promotes both physical fitness and mental agility. Playing volleyball enhances hand-eye coordination, reflexes, and upper body strength. The game encourages teamwork and communication, as players rely on each other to set up plays and score points. It's an enjoyable sport that builds confidence and social skills.`,
 
+    head2: "Meet Our Volleyball Coach",
+    para2: `Our volleyball coach is committed to helping players improve their technical and strategic abilities. Training sessions focus on key skills like serving, spiking, setting, and blocking. With a combination of drills and practice matches, the program is designed to help players gain confidence and improve their game.`,
+  },
   {
     id: 4,
     scity: "Kabaddi",
     bimg: b4,
 
-    head1: "How To Choose the Best Travel Agency in Chennai?",
-    para1: `We all love to travel around with our family and friends, but for most of us, planning a trip is not very easy without the help of a traveling agent. In a city like Chennai, several travel agents are sprouting up everywhere like mushrooms. So, it is going to take a lot of time to choose the best travel agency in Chennai. GT Holidays is one of the best tour operators in Chennai to assist you with all your travel needs ranging from hotel booking, passport services, visa services, ticketing services and, so on.
+    head1: "Why Kabaddi is a Great Sport",
+    para1: `Kabaddi is a traditional sport that combines strength, agility, and strategy. It builds core strength, stamina, and quick reflexes. Kabaddi enhances mental focus and promotes quick decision-making. As a team sport, it fosters teamwork and coordination, making it a fun yet challenging sport for participants.`,
 
-        At GT Holidays, we provide our best services to travelers around the world. We build valuable relationships with our customers by providing them with innovative tour packages and personalized care. The value-oriented pricing at GT Holidays facilitates our customers to enjoy their holidays without any hassles. Our experienced travel agents are always dedicated to providing round-the-clock services that help our customers to have unlimited fun throughout the holidays.`,
-    head2: "Why Is GT Holidays the Best Travel Agent in Chennai?",
-    para2:
-      "At GT Holidays, we care about our travelers with the utmost transparency and quality services. As one of the trusted travel agents in Chennai, GT Holidays is keen to assist you with all your travel needs.",
+    head2: "About Our Kabaddi Coach",
+    para2: `Our Kabaddi coach brings a wealth of experience to training sessions, focusing on techniques and strategies essential for success in the game. The program covers essential skills such as raiding and defense strategies, strength conditioning, and agility drills, all aimed at enhancing players’ performance on the mat.`,
   },
   {
     id: 5,
-    scity: "KhoKho",
+    scity: "Kho Kho",
     bimg: b5,
 
-    head1: "How To Choose the Best Travel Agency in Coimbatore?",
-    para1:
-      "Now, even choosing a travel agency is a task because you are trusting them to make your quality time special. But, it doesn’t really have to be that difficult. Yes, numbers speak a lot, but there’s more to a company than just the number of people they have served. While choosing a Travel agency, the foremost and the most important thing to look out for is the quality and not the quantity.",
-    head2: "Why GT Holidays Is the Best Travel Agent in Coimbatore?",
-    para2: `Finding a reliable travel agent in Coimbatore, especially in the city where you are crowded with a number of agents selling you the same gimmicks, is really difficult. But with our exceptional and unique packages, we have hit the right spot in the tours and travels industry.
+    head1: "The Thrill of Playing Kho Kho",
+    para1: `Kho Kho is a traditional Indian sport that emphasizes speed, agility, and teamwork. It builds cardiovascular endurance, coordination, and strategic planning skills. Players learn to think quickly and stay alert, making Kho Kho an exciting and engaging sport for all age groups.`,
 
-        If you are in the heart of South India, Coimbatore, looking for a tour operator, then look no more. You have reached just the right place! GT holidays in Coimbatore is the answer to all your problems. We are the best in the field and we have shown it time and again with our ‘Beyond Anything’ care packages that are customized personally for you so you don’t have to pay for something that you know you won’t enjoy.`,
+    head2: "Our Kho Kho Coaching",
+    para2: `Our Kho Kho program is led by an experienced coach who focuses on building players' speed, agility, and strategic understanding. The training includes drills, practice games, and sessions on tactics and defense mechanisms to improve both individual and team performance. It's an ideal program for anyone looking to excel in this traditional sport.`,
   },
 ];

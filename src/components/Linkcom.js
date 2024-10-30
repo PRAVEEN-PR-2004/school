@@ -5,13 +5,16 @@ import Container from "react-bootstrap/Container";
 const Linkcom = ({ children }) => {
   return (
     <>
-      <hr style={{ color: " rgb(127, 126, 126)" }}></hr>
-      <Container>
+      <Container className="mt-3">
         <Nav>
           <Nav.Item>
             <Nav.Link
               href="/"
-              style={{ color: "black", fontSize: "smaller", fontWeight: "600" }}
+              style={{
+                color: "black",
+                fontSize: "smaller",
+                fontWeight: "600",
+              }}
             >
               Home
             </Nav.Link>
@@ -27,6 +30,7 @@ const Linkcom = ({ children }) => {
           </Nav.Item>
         </Nav>
       </Container>
+      <hr style={{ color: " rgb(127, 126, 126)" }}></hr>
     </>
   );
 };

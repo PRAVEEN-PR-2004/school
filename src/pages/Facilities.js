@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import cruise from "../assets/cruise.png";
+// import cruise from "../assets/cruise.png";
 import lab from "../assets/lab.webp";
 import library from "../assets/library.webp";
 import computerlab from "../assets/computerlab.webp";
@@ -7,6 +7,7 @@ import playground from "../assets/childrenplayground.jpg";
 import Linkcom from "../components/Linkcom";
 import { Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
+import banner from "../assets/bgbanner.jpg";
 
 const Facilities = () => {
   useEffect(() => {
@@ -14,12 +15,42 @@ const Facilities = () => {
   }, []);
   return (
     <>
-      <div style={{ marginBottom: "1%" }}>
+      {/* <div style={{ marginBottom: "1%" }}>
         <img
           src={cruise}
           alt="School Banner"
           style={{ width: "100%", height: "auto" }}
         />
+      </div> */}
+      <div style={{ position: "relative", width: "100%", height: "auto" }}>
+        <img
+          src={banner}
+          alt="School Group Banner"
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "cover", // Ensures the image covers the container without distortion
+            maxHeight: "500px", // Set a max height for large screens
+          }}
+        />
+        {/* Title Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)", // Centers the text
+            color: "black", // Text color
+            fontSize: window.innerWidth < 768 ? "1.5rem" : "3.5rem",
+            fontWeight: "bold",
+
+            textAlign: "center",
+            zIndex: 10, // Adds z-index to bring the text above other elements
+            padding: "10px 20px", // Optional: adds some padding around the text
+          }}
+        >
+          FACILITIES {/* Displays the title from SCHOOL_GROUPS.js */}
+        </div>
       </div>
       <Linkcom
         children={"School Facilities"}

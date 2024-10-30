@@ -3,6 +3,7 @@ import Linkcom from "../components/Linkcom";
 import companyimg1 from "../assets/companyimg2.jpg";
 import companyimg2 from "../assets/com.png";
 import owner from "../assets/owner.jpg";
+import banner from "../assets/bgbanner.jpg";
 
 import { Col, Row, Container, Card } from "react-bootstrap";
 import Footer from "../components/Footer";
@@ -14,6 +15,35 @@ const Aboutus = () => {
 
   return (
     <>
+      <div style={{ position: "relative", width: "100%", height: "auto" }}>
+        <img
+          src={banner}
+          alt="School Group Banner"
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "cover", // Ensures the image covers the container without distortion
+            maxHeight: "500px", // Set a max height for large screens
+          }}
+        />
+        {/* Title Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)", // Centers the text
+            color: "black", // Text color
+            fontSize: window.innerWidth < 768 ? "1.5rem" : "3.5rem",
+            fontWeight: "bold",
+            textAlign: "center",
+            zIndex: 10, // Adds z-index to bring the text above other elements
+            padding: "10px 20px", // Optional: adds some padding around the text
+          }}
+        >
+          ABOUT US {/* Displays the title from SCHOOL_GROUPS.js */}
+        </div>
+      </div>
       <Linkcom children={"About Us"} />
       <Container className="mt-5">
         <Row className="mt-1 mb-5">
