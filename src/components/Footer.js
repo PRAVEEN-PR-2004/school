@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -34,26 +35,31 @@ const Footer = () => {
               </p>
             </Col>
             <Col md={6} className="text-center">
-              <Form>
-                <input
-                  type="text"
-                  style={{ height: "50px", width: "60%", border: "none" }}
-                  placeholder="Your email"
-                />
-
-                <Button
-                  variant="dark"
+              <p
+                style={{
+                  fontSize: "30px",
+                  fontFamily: "Playfair Display, serif",
+                }}
+              >
+                Join in
+                <a
+                  href="https://chat.whatsapp.com/FenE5bzZMmG7x8rA6seyZI"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
-                    borderRadius: "0",
-                    height: "50px",
-                    marginBottom: "4px",
-                    fontSize: "small",
-                    fontWeight: "500",
+                    marginLeft: "8px",
+                    fontSize: "30px",
                   }}
                 >
-                  SUBSCRIBE
-                </Button>
-              </Form>
+                  <FaWhatsapp
+                    style={{
+                      fontSize: "35px",
+                      fontFamily: "Playfair Display, serif",
+                      color: "black",
+                    }}
+                  />
+                </a>
+              </p>
             </Col>
           </Row>
         </Container>
@@ -237,7 +243,7 @@ const Footer = () => {
                 style={{ fontSize: "25px", color: "#BDBDBD" }}
                 className="mb-0"
               >
-                mail@gtholidays.in
+                mail@stantonys.in
               </p>
             </Col>
 

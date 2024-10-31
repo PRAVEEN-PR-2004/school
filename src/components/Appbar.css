@@ -20,3 +20,52 @@
   background-color: transparent !important; /* Keep the hover background transparent */
   color: inherit !important; /* Keep the text color the same */
 }
+.logo-text {
+  background-color: #ffd400; /* Yellow background similar to the logo */
+  padding: 7px 16px;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo-text .main-text {
+  font-size: 2rem; /* Default font size for larger screens */
+  font-weight: bold;
+  color: #333; /* Dark color for the main text */
+  display: block;
+}
+
+.logo-text .sub-text {
+  font-size: 0.8rem; /* Smaller font size for the subtext */
+  color: #333;
+  display: block;
+  text-transform: lowercase;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .logo-text {
+    padding: 5px 10px; /* Reduce padding */
+  }
+
+  .logo-text .main-text {
+    font-size: 1.5rem; /* Reduce main text size */
+  }
+
+  .logo-text .sub-text {
+    font-size: 0.6rem; /* Reduce subtext size */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    padding: 4px 10px; /* Further reduce padding for very small screens */
+  }
+
+  .logo-text .main-text {
+    font-size: 1.4rem; /* Further reduce main text size */
+  }
+
+  .logo-text .sub-text {
+    font-size: 0.7rem; /* Further reduce subtext size */
+  }
+}

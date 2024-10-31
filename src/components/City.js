@@ -51,7 +51,7 @@ export const CITY = [
   },
   {
     id: 5,
-    scity: "Kho Kho",
+    scity: "KhoKho",
     bimg: b5,
 
     head1: "The Thrill of Playing Kho Kho",

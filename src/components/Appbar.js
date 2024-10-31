@@ -40,15 +40,14 @@ function Appbar() {
           <Container fluid>
             <Navbar.Brand
               href="#home"
-              className="d-flex justify-content-center  ml-md-3"
+              className="d-flex justify-content-center ml-md-3"
             >
-              <img
-                src={logog}
-                width={isSmallScreen ? "150" : "250"}
-                height="100"
-                className="d-inline-block align-top img-fluid mx-auto img-responsive"
-                alt="GT Holidays Logo"
-              />
+              <div class="logo-text">
+                <span class="main-text">ST ANTONY'S</span>
+                <span class="sub-text">
+                  matriculation higher seconday school
+                </span>
+              </div>
             </Navbar.Brand>
 
             <Navbar.Toggle
@@ -114,6 +113,7 @@ function Appbar() {
                   >
                     WEDDING
                   </Link> */}
+
                   <Link
                     to="/contactus"
                     className="nav-link"
