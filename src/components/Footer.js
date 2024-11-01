@@ -120,7 +120,7 @@ const Footer = () => {
                     fontFamily: "Playfair Display, serif",
                   }}
                 >
-                  Head Office
+                  School Name
                 </h3>
                 <hr
                   style={{ borderTop: "2px solid lightgray", width: "100%" }}
@@ -131,31 +131,31 @@ const Footer = () => {
                 style={{ fontSize: "12px", color: "lightgray" }}
                 className="mb-0"
               >
-                GT Holidays Pvt LTD,
+                St Antony's
               </p>
               <p
                 style={{ fontSize: "12px", color: "lightgray" }}
                 className="mb-0"
               >
-                No.1, Gemini Parsn,
+                Matriculation
               </p>
               <p
                 style={{ fontSize: "12px", color: "lightgray" }}
                 className="mb-0"
               >
-                Kodambakkam High Road,
+                Higher
               </p>
               <p
                 style={{ fontSize: "12px", color: "lightgray" }}
                 className="mb-0"
               >
-                Nungambakkam, Chennai – 600006
+                Secondary
               </p>
               <p
                 style={{ fontSize: "12px", color: "lightgray" }}
                 className="mb-0"
               >
-                Tamilnadu, India.
+                School.
               </p>
             </Col>
             <Col md={4} className="mb-5">
