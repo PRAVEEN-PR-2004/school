@@ -63,7 +63,7 @@
 
 @media (max-width: 480px) {
   .logo-text {
-    padding: 2px 4px;
+    padding: 3px 5px;
   }
 
   .logo-text .main-text {
@@ -71,7 +71,7 @@
   }
 
   .logo-text .sub-text {
-    font-size: 0.3rem;
+    font-size: 0.4rem;
   }
 
   /* Adjust navbar text and link font sizes */
