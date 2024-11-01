@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Button, Form, Container } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import { FaMailBulk } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Container,
@@ -8,26 +8,13 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 import "./Appbar.css";
-import logog from "../assets/GT-Holidays-Logo.jpg";
 
 function Appbar() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   const closeOffcanvas = () => {
     setShowOffcanvas(false);
   };
-  const isSmallScreen = windowWidth <= 768;
 
   return (
     <>
@@ -42,10 +29,10 @@ function Appbar() {
               href="#home"
               className="d-flex justify-content-center ml-md-3"
             >
-              <div class="logo-text">
-                <span class="main-text">ST ANTONY'S</span>
-                <span class="sub-text">
-                  matriculation higher seconday school
+              <div className="logo-text">
+                <span className="main-text">ST ANTONY'S</span>
+                <span className="sub-text">
+                  matriculation higher secondary school
                 </span>
               </div>
             </Navbar.Brand>
@@ -78,27 +65,6 @@ function Appbar() {
                   >
                     ABOUT US
                   </Link>
-                  {/*} <Link
-                    to="/grouptour"
-                    className="nav-link"
-                    onClick={closeOffcanvas}
-                  >
-                    GROUP TOUR
-                  </Link>
-                  <Link
-                    to="/packages"
-                    className="nav-link"
-                    onClick={closeOffcanvas}
-                  >
-                    PACKAGES
-                  </Link>
-                  <Link
-                    to="/honeymoon"
-                    className="nav-link"
-                    onClick={closeOffcanvas}
-                  >
-                    HONEYMOON
-                  </Link>*/}
                   <Link
                     to="/facilities"
                     className="nav-link"
@@ -106,14 +72,6 @@ function Appbar() {
                   >
                     FACILITIES
                   </Link>
-                  {/* <Link
-                    to="/wedding"
-                    className="nav-link"
-                    onClick={closeOffcanvas}
-                  >
-                    WEDDING
-                  </Link> */}
-
                   <Link
                     to="/contactus"
                     className="nav-link"
@@ -125,81 +83,13 @@ function Appbar() {
                     title="SPORT"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Football"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Football
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Basketball"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Basketball
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Volleyball"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Volleyball
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Kabaddi"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Kabaddi
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/KhoKho"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      KhoKho
-                    </NavDropdown.Item>
+                    {/* Dropdown items */}
                   </NavDropdown>
                   <NavDropdown
                     title="GROUP"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/BioMath"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Bio-Math
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/Commerce"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Commerce
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/ComputerScience"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Computer Science
-                    </NavDropdown.Item>
+                    {/* Dropdown items */}
                   </NavDropdown>
                 </Nav>
                 <Navbar.Text className="justify-content-end">
