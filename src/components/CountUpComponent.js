@@ -17,6 +17,12 @@ const CountUpComponent = () => {
     { id: 4, end: 100, label: "Awards Won" },
   ];
 
+  // Define responsive font sizes
+  const isSmallScreen = window.innerWidth <= 768;
+  const headingFontSize = isSmallScreen ? "1.8rem" : "2.5rem";
+  const numberFontSize = isSmallScreen ? "2rem" : "3rem";
+  const labelFontSize = isSmallScreen ? "1rem" : "1.4rem";
+
   return (
     <Container
       ref={ref}
@@ -29,7 +35,7 @@ const CountUpComponent = () => {
           style={{
             fontFamily: "Playfair Display",
             color: "#333",
-            fontSize: "2.5rem",
+            fontSize: headingFontSize,
           }}
         >
           Our Achievements
@@ -51,7 +57,12 @@ const CountUpComponent = () => {
                 }}
               >
                 <Card.Body>
-                  <h3 style={{ fontSize: "3rem", color: "#007BFF" }}>
+                  <h3
+                    style={{
+                      fontSize: numberFontSize,
+                      color: "#007BFF",
+                    }}
+                  >
                     {inView && (
                       <CountUp
                         start={0}
@@ -64,7 +75,7 @@ const CountUpComponent = () => {
                   </h3>
                   <Card.Text
                     style={{
-                      fontSize: "1.4rem",
+                      fontSize: labelFontSize,
                       fontWeight: "500",
                       color: "#555",
                     }}

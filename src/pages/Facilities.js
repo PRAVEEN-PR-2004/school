@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import cruise from "../assets/cruise.png";
 import lab from "../assets/lab.webp";
 import library from "../assets/library.webp";
 import computerlab from "../assets/computerlab.webp";
@@ -13,15 +12,15 @@ const Facilities = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Responsive font sizes
+  const isSmallScreen = window.innerWidth <= 768;
+  const titleFontSize = isSmallScreen ? "1.5rem" : "2.5rem"; // Adjusted size for small screens
+  const headingFontSize = isSmallScreen ? "2rem" : "3.5rem"; // Adjusted size for small screens
+  const textFontSize = isSmallScreen ? "0.9rem" : "1.2rem"; // Adjusted size for small screens
+
   return (
     <>
-      {/* <div style={{ marginBottom: "1%" }}>
-        <img
-          src={cruise}
-          alt="School Banner"
-          style={{ width: "100%", height: "auto" }}
-        />
-      </div> */}
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <img
           src={banner}
@@ -29,8 +28,8 @@ const Facilities = () => {
           style={{
             width: "100%",
             height: "auto",
-            objectFit: "cover", // Ensures the image covers the container without distortion
-            maxHeight: "500px", // Set a max height for large screens
+            objectFit: "cover",
+            maxHeight: "500px",
           }}
         />
         {/* Title Overlay */}
@@ -39,27 +38,28 @@ const Facilities = () => {
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)", // Centers the text
-            color: "black", // Text color
-            fontSize: window.innerWidth < 768 ? "1.5rem" : "3.5rem",
+            transform: "translate(-50%, -50%)",
+            color: "black",
+            fontSize: headingFontSize,
             fontWeight: "bold",
-
             textAlign: "center",
-            zIndex: 10, // Adds z-index to bring the text above other elements
-            padding: "10px 20px", // Optional: adds some padding around the text
+            zIndex: 10,
+            padding: "10px 20px",
           }}
         >
-          FACILITIES {/* Displays the title from SCHOOL_GROUPS.js */}
+          FACILITIES
         </div>
       </div>
+
       <Linkcom
         children={"School Facilities"}
-        className="d-flex  align-items-center justify-content-center"
+        className="d-flex align-items-center justify-content-center"
       />
+
       <Container className="mt-5">
         {/* Library */}
         <p
-          style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+          style={{ fontSize: titleFontSize, fontWeight: "bold" }}
           className="text-center text-lg-start"
         >
           Library
@@ -76,9 +76,9 @@ const Facilities = () => {
           <Col md={5} className="order-md-1">
             <p
               style={{
-                fontSize: "1.2rem",
-                lineHeight: "1.8",
-                letterSpacing: "0.9px",
+                fontSize: textFontSize,
+                lineHeight: "1.5", // Adjusted for better readability on small screens
+                letterSpacing: "0.5px", // Reduced letter spacing for small screens
               }}
             >
               Our library offers a wide range of books, magazines, and digital
@@ -95,7 +95,7 @@ const Facilities = () => {
 
         {/* Science Lab */}
         <p
-          style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+          style={{ fontSize: titleFontSize, fontWeight: "bold" }}
           className="text-center text-lg-start"
         >
           Science Lab
@@ -112,9 +112,9 @@ const Facilities = () => {
           <Col md={5}>
             <p
               style={{
-                fontSize: "1.2rem",
-                lineHeight: "1.8",
-                letterSpacing: "0.9px",
+                fontSize: textFontSize,
+                lineHeight: "1.5",
+                letterSpacing: "0.5px",
               }}
             >
               Our fully-equipped science lab provides students with hands-on
@@ -131,7 +131,7 @@ const Facilities = () => {
 
         {/* Playground */}
         <p
-          style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+          style={{ fontSize: titleFontSize, fontWeight: "bold" }}
           className="text-center text-lg-start"
         >
           Playground
@@ -148,9 +148,9 @@ const Facilities = () => {
           <Col md={5} className="order-md-1">
             <p
               style={{
-                fontSize: "1.2rem",
-                lineHeight: "1.8",
-                letterSpacing: "0.9px",
+                fontSize: textFontSize,
+                lineHeight: "1.5",
+                letterSpacing: "0.5px",
               }}
             >
               Our spacious playground provides students with an area for
@@ -167,7 +167,7 @@ const Facilities = () => {
 
         {/* Computer Lab */}
         <p
-          style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+          style={{ fontSize: titleFontSize, fontWeight: "bold" }}
           className="text-center text-lg-start"
         >
           Computer Lab
@@ -184,9 +184,9 @@ const Facilities = () => {
           <Col md={5} className="order-md-2">
             <p
               style={{
-                fontSize: "1.2rem",
-                lineHeight: "1.8",
-                letterSpacing: "0.9px",
+                fontSize: textFontSize,
+                lineHeight: "1.5",
+                letterSpacing: "0.5px",
               }}
             >
               The computer lab provides a modern environment for digital

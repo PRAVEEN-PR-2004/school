@@ -81,15 +81,75 @@ function Appbar() {
                   </Link>
                   <NavDropdown
                     title="SPORT"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    id={`offcanvasNavbarDropdown-sport-${expand}`}
                   >
-                    {/* Dropdown items */}
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/contact/Football"
+                      onClick={closeOffcanvas}
+                    >
+                      Football
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/contact/Basketball"
+                      onClick={closeOffcanvas}
+                    >
+                      Basketball
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/contact/Volleyball"
+                      onClick={closeOffcanvas}
+                    >
+                      Volleyball
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/contact/Kabaddi"
+                      onClick={closeOffcanvas}
+                    >
+                      Kabaddi
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/contact/KhoKho"
+                      onClick={closeOffcanvas}
+                    >
+                      KhoKho
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown
                     title="GROUP"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    id={`offcanvasNavbarDropdown-group-${expand}`}
                   >
-                    {/* Dropdown items */}
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/BioMath"
+                      onClick={closeOffcanvas}
+                    >
+                      Bio-Math
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/Commerce"
+                      onClick={closeOffcanvas}
+                    >
+                      Commerce
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/ComputerScience"
+                      onClick={closeOffcanvas}
+                    >
+                      Computer Science
+                    </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Navbar.Text className="justify-content-end">

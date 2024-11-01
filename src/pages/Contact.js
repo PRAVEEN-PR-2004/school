@@ -3,7 +3,6 @@ import { CITY } from "../components/City";
 import { useParams } from "react-router-dom";
 import Linkcom from "../components/Linkcom";
 import { Container } from "react-bootstrap";
-
 import Footer from "../components/Footer";
 
 const Contact = () => {
@@ -17,6 +16,11 @@ const Contact = () => {
   if (!contactcity) {
     return <p>City not found. Please check the URL.</p>;
   }
+
+  // Responsive font sizes
+  const isSmallScreen = window.innerWidth <= 768; // Change the width as needed
+  const headingFontSize = isSmallScreen ? "1.3rem" : "2rem"; // Heading size for small screens
+  const paraFontSize = isSmallScreen ? "0.8rem" : "1rem"; // Paragraph size for small screens
 
   return (
     <>
@@ -40,7 +44,7 @@ const Contact = () => {
             left: "50%",
             transform: "translate(-50%, -50%)", // Centers the text
             color: "white", // Text color
-            fontSize: "2.5rem", // Adjust as per your need
+            fontSize: headingFontSize, // Use the responsive heading size
             fontWeight: "bold",
             textAlign: "center",
             backgroundColor: "rgba(0, 0, 0, 0.5)", // Optional: adds a slight background to make text more readable
@@ -52,10 +56,14 @@ const Contact = () => {
       </div>
       <Linkcom>{contactcity.scity}</Linkcom>
       <Container style={{ marginTop: "3%" }} className="mb-5">
-        <p style={{ fontSize: "30px" }}>{contactcity.head1}</p>
-        <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para1}</p>
-        <p style={{ fontSize: "30px" }}>{contactcity.head2}</p>
-        <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para2}</p>
+        <p style={{ fontSize: headingFontSize }}>{contactcity.head1}</p>
+        <p style={{ fontSize: paraFontSize, color: "gray" }}>
+          {contactcity.para1}
+        </p>
+        <p style={{ fontSize: headingFontSize }}>{contactcity.head2}</p>
+        <p style={{ fontSize: paraFontSize, color: "gray" }}>
+          {contactcity.para2}
+        </p>
       </Container>
 
       <Footer />
