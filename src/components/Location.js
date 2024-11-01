@@ -16,6 +16,7 @@ const Location = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="School Location on Google Maps" // Add a unique title here
           ></iframe>
         </Col>
         <Col md={4}>
