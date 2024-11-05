@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
+import { Fade } from "react-awesome-reveal";
 const Content = () => {
   return (
     <>
@@ -28,7 +28,9 @@ const Content = () => {
       </style>
 
       <Container className="mt-5 mb-5">
-        <h3 style={{ marginBottom: "25px" }}>Welcome to ABC School</h3>
+        <Fade delay={1e2} cascade damping={1e-1}>
+          <h3 style={{ marginBottom: "25px" }}>Welcome to ABC School</h3>
+        </Fade>
         <p className="text-muted text-responsive">
           ABC School, established in 1990, is a renowned institution known for
           providing a strong academic foundation and promoting holistic

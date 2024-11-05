@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Container } from "react-bootstrap";
+import { Fade } from "react-awesome-reveal";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import s1 from "../assets/lab.webp";
@@ -29,7 +30,10 @@ const Slider1 = () => {
 
   return (
     <Container className="mt-4 mb-5">
-      <h3 style={{ marginBottom: "25px" }}>Facilities Provided by us</h3>
+      <Fade delay={1e2} cascade damping={1e-1}>
+        <h3 style={{ marginBottom: "25px" }}>Facilities Provided by us</h3>
+      </Fade>
+
       <Carousel
         responsive={responsive}
         infinite={true}

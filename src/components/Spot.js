@@ -1,11 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap"; // Assuming you're using Bootstrap for styling
 import "./Spot.css";
+import { Fade } from "react-awesome-reveal";
 const Spot = () => {
   return (
     <div>
       <Container className="mt-5 mb-5">
-        <h3 className="heading mb-3">School Overview</h3>
+        <Fade delay={1e2} cascade damping={1e-1}>
+          <h3 className="heading mb-3">School Overview</h3>
+        </Fade>
         <Row className="mt-3 mb-2">
           <Col lg={8} md={12} sm={12} className="mb-4">
             <div className="overlay-container">

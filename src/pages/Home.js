@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
 
-import Location from "../components/Location";
+// import Location from "../components/Location";
 import CountUpComponent from "../components/CountUpComponent";
 
 const Home = () => {

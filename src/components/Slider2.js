@@ -7,6 +7,7 @@ import s2 from "../assets/basketball.jpg";
 import s3 from "../assets/kabaddi.jpg";
 import s4 from "../assets/khokho.jpg";
 import s5 from "../assets/volleyball.jpg";
+import { Fade } from "react-awesome-reveal";
 
 const Slider2 = () => {
   const responsive = {
@@ -30,7 +31,9 @@ const Slider2 = () => {
 
   return (
     <Container className="mt-4 mb-5">
-      <h3 style={{ marginBottom: "25px" }}>Sports Activities</h3>
+      <Fade delay={1e2} cascade damping={1e-1}>
+        <h3 style={{ marginBottom: "25px" }}>Sports Activities</h3>
+      </Fade>
       <Carousel
         responsive={responsive}
         infinite={true}
