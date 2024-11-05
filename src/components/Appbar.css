@@ -1,7 +1,7 @@
 .noo {
   color: black;
   font-weight: bold;
-  background-color: #ffcc00;
+  background-color: #00bfff;
   padding: 5px;
 }
 .changenav {
@@ -21,7 +21,7 @@
   color: inherit !important; /* Keep the text color the same */
 }
 .logo-text {
-  background-color: #ffd400; /* Yellow background similar to the logo */
+  background-color: #00bfff; /* Yellow background similar to the logo */
   padding: 7px 16px;
   display: inline-block;
   text-align: center;
@@ -29,7 +29,7 @@
 
 .logo-text .main-text {
   font-size: 2rem; /* Default font size for larger screens */
-  font-weight: bold;
+  font-weight: bolder;
   color: #333; /* Dark color for the main text */
   display: block;
 }
@@ -39,6 +39,7 @@
   color: #333;
   display: block;
   text-transform: lowercase;
+  font-weight: bold;
 }
 
 /* Responsive adjustments for smaller screens */

@@ -29,9 +29,7 @@ const Slider1 = () => {
 
   return (
     <Container className="mt-4 mb-5">
-      <h3 style={{ fontFamily: "Playfair Display", color: "#3A3A3A" }}>
-        Facilities Provided by us
-      </h3>
+      <h3 style={{ marginBottom: "25px" }}>Facilities Provided by us</h3>
       <Carousel
         responsive={responsive}
         infinite={true}

@@ -24,7 +24,7 @@ const Footer = () => {
         <Container>
           <Row style={{}} className="text-center">
             <Col md={6} className="text-center">
-              <p style={{ fontSize: "30px" }}>
+              <p style={{ fontSize: "2rem" }}>
                 <FaMailBulk
                   style={{
                     marginRight: "2%",
@@ -37,7 +37,7 @@ const Footer = () => {
             <Col md={6} className="text-center">
               <p
                 style={{
-                  fontSize: "30px",
+                  fontSize: "2rem",
                   fontFamily: "Playfair Display, serif",
                 }}
               >
@@ -48,12 +48,12 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   style={{
                     marginLeft: "8px",
-                    fontSize: "30px",
+                    fontSize: "2rem",
                   }}
                 >
                   <FaWhatsapp
                     style={{
-                      fontSize: "35px",
+                      fontSize: "2.3rem",
                       fontFamily: "Playfair Display, serif",
                       color: "black",
                     }}

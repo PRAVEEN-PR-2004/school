@@ -29,7 +29,6 @@ const Home = () => {
       <CountUpComponent />
       <Slider2 />
 
-      <Location />
       <Footer />
     </>
   );

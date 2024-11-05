@@ -4,8 +4,8 @@ import "./Spot.css";
 const Spot = () => {
   return (
     <div>
-      <Container className="mt-5">
-        <h4 className="heading">School Overview</h4>
+      <Container className="mt-5 mb-5">
+        <h3 className="heading mb-3">School Overview</h3>
         <Row className="mt-3 mb-2">
           <Col lg={8} md={12} sm={12} className="mb-4">
             <div className="overlay-container">

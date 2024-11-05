@@ -26,7 +26,7 @@ function Appbar() {
         >
           <Container fluid>
             <Navbar.Brand
-              href="#home"
+              href="/"
               className="d-flex justify-content-center ml-md-3"
             >
               <div className="logo-text">

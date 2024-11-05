@@ -60,7 +60,7 @@ const CountUpComponent = () => {
                   <h3
                     style={{
                       fontSize: numberFontSize,
-                      color: "#007BFF",
+                      color: "#00BFFF",
                     }}
                   >
                     {inView && (

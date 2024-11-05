@@ -31,11 +31,11 @@ function Topbar() {
               <span className="icon-container">
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  style={{ color: "yellow", marginRight: "10px" }}
+                  style={{ color: "#00BFFF", marginRight: "10px" }}
                 />
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ color: "yellow", marginRight: "10px" }}
+                  style={{ color: "#00BFFF", marginRight: "10px" }}
                 />
               </span>
             </Navbar.Brand>
@@ -44,11 +44,11 @@ function Topbar() {
               <span className="icon-container">
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  style={{ color: "yellow", marginRight: "10px" }}
+                  style={{ color: "#00bfff", marginRight: "10px" }}
                 />
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ color: "yellow", marginRight: "10px" }}
+                  style={{ color: "#00bfff", marginRight: "10px" }}
                 />
               </span>
               <span className="add">| </span>

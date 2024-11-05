@@ -39,7 +39,7 @@ const Banner = () => {
             />
           )}
           <Carousel.Caption>
-            <h3 style={{ fontWeight: "700", color: "yellow" }}>
+            <h3 style={{ fontWeight: "bolder", color: "#00BFFF" }}>
               Extraordinary
             </h3>
             <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
@@ -63,7 +63,7 @@ const Banner = () => {
             />
           )}
           <Carousel.Caption>
-            <h3 style={{ fontWeight: "700", color: "yellow" }}>
+            <h3 style={{ fontWeight: "bolder", color: "#00BFFF" }}>
               Learning Reimagined
             </h3>
             <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
@@ -87,7 +87,7 @@ const Banner = () => {
             />
           )}
           <Carousel.Caption>
-            <h3 style={{ fontWeight: "700", color: "yellow" }}>
+            <h3 style={{ fontWeight: "bolder", color: "#00BFFF" }}>
               Inspire and Achieve
             </h3>
             <p style={{ fontWeight: "bold" }} className="d-none d-sm-block">
