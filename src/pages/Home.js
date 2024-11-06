@@ -21,29 +21,31 @@ const Home = () => {
   return (
     <>
       {/* Use Slide component with custom easing and duration for smoothness */}
-      <Slide triggerOnce duration={1000} direction="left" damping={0.3}>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
         <Banner />
       </Slide>
 
-      <Slide triggerOnce duration={1000} direction="left" damping={0.3}>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
         <Content />
       </Slide>
 
-      {/* <Slide triggerOnce duration={1000} direction="left" damping={0.3}> */}
-      <Spot />
-      {/* </Slide> */}
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
+        {" "}
+        <Spot />
+      </Slide>
 
-      <Slide triggerOnce duration={1000} direction="left" damping={0.3}>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
         <TextCard />
       </Slide>
 
-      <Slide triggerOnce duration={1000} direction="left" damping={0.3}>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
         <Slider1 />
       </Slide>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
+        <CountUpComponent />
+      </Slide>
 
-      <CountUpComponent />
-
-      <Slide triggerOnce duration={1000} direction="left" damping={0.3}>
+      <Slide triggerOnce duration={1000} direction="up" damping={0.3}>
         <Slider2 />
       </Slide>
 

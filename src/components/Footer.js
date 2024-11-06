@@ -223,12 +223,19 @@ const Footer = () => {
           <Row>
             <Col md={4} className="mb-5">
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD", fontSize: "15px" }}>Call Us</h3>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
+                  Call Us
+                </h3>
                 <hr style={{ borderTop: "2px solid white", width: "100%" }} />
               </div>
 
               <p
-                style={{ fontSize: "25px", color: "#BDBDBD" }}
+                style={{ fontSize: "20px", color: "#BDBDBD" }}
                 className="mb-0"
               >
                 +91 9940882200
@@ -236,11 +243,18 @@ const Footer = () => {
             </Col>
             <Col md={4} className="mb-5">
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD", fontSize: "15px" }}>Email Us</h3>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
+                  Email Us
+                </h3>
                 <hr style={{ borderTop: "2px solid white", width: "100%" }} />
               </div>
               <p
-                style={{ fontSize: "25px", color: "#BDBDBD" }}
+                style={{ fontSize: "20px", color: "#BDBDBD" }}
                 className="mb-0"
               >
                 mail@stantonys.in
@@ -249,7 +263,12 @@ const Footer = () => {
 
             <Col md={4}>
               <div style={{ display: "inline-block" }}>
-                <h3 style={{ color: "#BDBDBD", fontSize: "15px" }}>
+                <h3
+                  style={{
+                    color: "#BDBDBD",
+                    fontFamily: "Playfair Display, serif",
+                  }}
+                >
                   Follow Us
                 </h3>
                 <hr
