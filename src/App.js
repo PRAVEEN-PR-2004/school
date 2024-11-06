@@ -17,6 +17,7 @@ import ShowGtours from "./components/ShowGtours";
 import ContactForGroup from "./pages/ContactForGroup.js";
 import Email from "./pages/Email.js";
 import Whatsapp from "./pages/Whatsapp.js";
+import Events from "./pages/Events.js";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/showgrouptour/:id" element={<ShowGtours />}></Route>
         <Route path="/contactus" element={<Email />}></Route>
         <Route path="/whatsapp" element={<Whatsapp />}></Route>
+        <Route path="/events" element={<Events />}></Route>
 
         <Route
           path="/ContactForGroup/:group"

@@ -72,13 +72,34 @@ function Appbar() {
                   >
                     FACILITIES
                   </Link>
-                  <Link
-                    to="/contactus"
-                    className="nav-link"
-                    onClick={closeOffcanvas}
+                  <NavDropdown
+                    title="GROUP"
+                    id={`offcanvasNavbarDropdown-group-${expand}`}
                   >
-                    CONTACT US
-                  </Link>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/BioMath"
+                      onClick={closeOffcanvas}
+                    >
+                      Bio-Math
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/Commerce"
+                      onClick={closeOffcanvas}
+                    >
+                      Commerce
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/ComputerScience"
+                      onClick={closeOffcanvas}
+                    >
+                      Computer Science
+                    </NavDropdown.Item>
+                  </NavDropdown>
                   <NavDropdown
                     title="SPORT"
                     id={`offcanvasNavbarDropdown-sport-${expand}`}
@@ -123,34 +144,20 @@ function Appbar() {
                       KhoKho
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <NavDropdown
-                    title="GROUP"
-                    id={`offcanvasNavbarDropdown-group-${expand}`}
+                  <Link
+                    to="/events"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
                   >
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/BioMath"
-                      onClick={closeOffcanvas}
-                    >
-                      Bio-Math
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/Commerce"
-                      onClick={closeOffcanvas}
-                    >
-                      Commerce
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ContactForGroup/ComputerScience"
-                      onClick={closeOffcanvas}
-                    >
-                      Computer Science
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                    EVENTS
+                  </Link>
+                  <Link
+                    to="/contactus"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
+                    CONTACT US
+                  </Link>
                 </Nav>
                 <Navbar.Text className="justify-content-end">
                   <span className="noo">+91 9195412160</span>
