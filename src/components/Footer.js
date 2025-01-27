@@ -297,12 +297,13 @@ const Footer = () => {
         <Row style={{ marginTop: "2%", marginBottom: "1%" }}>
           <Col sm={6}>
             <p style={{ fontSize: "13px", fontWeight: "500" }}>
-              Copyright © 2024 by GT Holidays Pvt Ltd. All Rights Reserved.
+              Copyright © 2024 by ST ANTONY'S MAT. HR. SCHOOL. All Rights
+              Reserved.
             </p>
           </Col>
           <Col sm={6}>
             <p style={{ fontSize: "13px", fontWeight: "500" }}>
-              Privacy Policy | Terms & Conditions | Cancellation & Refund Policy
+              Privacy Policy | Terms & Conditions
             </p>
           </Col>
         </Row>
